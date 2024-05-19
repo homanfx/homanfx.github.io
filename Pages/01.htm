@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homan Joneid | Front-End Web Developer</title>
+    <link rel="stylesheet" href="./styles/style-01.css">
+    <link rel="stylesheet" href="./styles/responsive-01.css">
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="47c80cb8-3e88-4d2b-a4fa-36eb339981d1";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <link rel="Website Icon" type="png" href="../pic/favicon.ico">
+</head>
+<body>
+    <!-- <div class="loading">
+        Hooman Joneid
+    </div>
+    <div class="content"> -->
+    <section class="header">
+    <div class="backd"></div>
+        <nav class="navbar">
+            <div class="hamber">
+                <img src="../pic/Hamburger_icon.png" alt="">
+            </div>
+            <a class="logo">
+                Hooman
+            </a>
+            <ul class="list">
+                <li><a href="../index.htm">Home</a></li>
+                    <li><a href="01.htm">Contact Me</a></li>
+                    <li><a href="./02.htm">About Me</a></li>
+            </ul>
+        </nav>
+        </div>
+        <nav class="navbar-res">
+            <ul class="list">
+                <li><a href="../index.htm">Home</a></li>
+                    <li><a href="01.htm">Contact Me</a></li>
+                    <li><a href="./02.htm">About Me</a></li>
+            </ul>
+        </nav>        
+        <div class="text-1">
+            <h2 class="h-1">
+                Form
+            </h2>
+            <form action="">
+                <input type="text" pattern="1" required placeholder="user">
+                <br>
+                <input type="password" name="" id="" pattern="1" required placeholder="password">
+                <br>
+                <input type="email" name="w" id=""  title="email" role="alert" required placeholder="email">
+                <br>
+                <button type="submit" class="btn" onclick="alert('Confermd')">
+                    Accept
+                    <span class="border top"></span>
+                    <span class="border right"></span>
+                    <span class="border bottom"></span>
+                    <span class="border left"></span>
+                </button>
+            </form>
+        </div>   
+        <!-- <footer class="footer">
+            <p>© CopyRight 2024 by <b>Hooman Joneid</b></p>
+        </footer> -->
+        </section>
+    <!-- </div> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $(document).ready(function(){
+                $('.hamber img').click(function(){
+                    var responsivemenu = $('.navbar-res');
+                    responsivemenu.show();
+                    responsivemenu.animate({
+                        opacity: '1'
+                    },400);
+                    $('body').append('<div class="back-container"></div>');
+                    $('.back-container').click(function(){
+                        var responsivemenu = $('.navbar-res');
+                        responsivemenu.animate({
+                        opacity: '0'
+                    },400,function(){
+                        responsivemenu.hide();
+                    });
+                    $(this).remove();
+                    })
+                })
+            })
+        </script>
+        <script>
+            $(function(){
+                $(".loading").fadeOut(4000, function(){
+                    $(".content").fadeIn(500);
+                });
+            });
+        </script>
+</body>
+</html>
